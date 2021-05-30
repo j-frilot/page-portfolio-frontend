@@ -2,16 +2,16 @@ import React from "react";
 
 const Intro = () => {
     return (
-        <section id="top" class="container">
-            <div class="row icons">
-                <div class="col s8 offset-s2">
-                    <ul class="web-links">
+        <section id="top" className="container">
+            <div className="row icons">
+                <div className="col s8 offset-s2">
+                    <ul className="web-links">
                         <li>
                             <a
                                 href="https://github.com/j-frilot"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="link tooltipped"
+                                className="link tooltipped"
                                 data-position="bottom"
                                 data-tooltip="Github"
                             >
@@ -24,7 +24,7 @@ const Intro = () => {
                                 href="./assets/JOSHUA_FRILOT_RESUME.pdf"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="link tooltipped"
+                                className="link tooltipped"
                                 data-position="bottom"
                                 data-tooltip="Resume"
                             >
@@ -37,7 +37,7 @@ const Intro = () => {
                                 href="https://www.linkedin.com/in/joshuafrilot/"
                                 target="_blank"
                                 rel="noreferrer"
-                                class="link tooltipped"
+                                className="link tooltipped"
                                 data-position="bottom"
                                 data-tooltip="LinkedIn"
                             >
@@ -47,24 +47,24 @@ const Intro = () => {
                     </ul>
                 </div>
             </div>
-            <div class="intro center-align">
+            <div className="intro center-align">
                 <h1>Hey, I'm Joshua Frilot</h1>
-                <h2 class="show-on-small "> Web Developer</h2>
-                <h2 class="show-on-small "> Lets Work Together!</h2>
+                <h2 className="show-on-small "> Web Developer</h2>
+                <h2 className="show-on-small "> Lets Work Together!</h2>
 
                 <p>
-                    I focus on creating <span class="stand">clean</span> and{" "}
-                    <span class="stand">visually appealing</span> work. I have
-                    worked with languages such as{" "}
-                    <span class="stand">javascript, html, and css</span>.
+                    I focus on creating <span className="stand">clean</span> and{" "}
+                    <span className="stand">visually appealing</span> work. I
+                    have worked with languages such as{" "}
+                    <span className="stand">javascript, html, and css</span>.
                     Please,{" "}
-                    <a href="#contact-1" class="stand">
+                    <a href="#contact-1" className="stand">
                         contact me
                     </a>{" "}
                     if you would like to talk or or learn more about my work.
                 </p>
             </div>
-            <hr class="hr" />
+            <hr className="hr" />
         </section>
     );
 };

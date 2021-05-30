@@ -2,11 +2,11 @@ import React from "react";
 
 const contact = () => {
     return (
-        <div class="col s12 l4">
-            <div class="card-panel info-panel">
-                <div class="contact-info center-align ">
+        <div className="col s12 l4">
+            <div className="card-panel info-panel">
+                <div className="contact-info center-align ">
                     <h4>My Info</h4>
-                    <ul class="info-list">
+                    <ul className="info-list">
                         <li>Phone: (504) 944-9712</li>
                         <li>
                             Email:{" "}

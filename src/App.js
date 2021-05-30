@@ -7,16 +7,17 @@ import Contact from "./components/Contact";
 
 function App() {
     return (
-        <body>
-            <div class="top-bar"></div>
+        <>
+            <div className="top-bar"></div>
             <div className="bucket">
                 <Intro />
                 <section id="skills" className="container">
                     <h3>Some of my skills</h3>
-                    <Xp />
-                    <h5>I have experience using:</h5>
                     <Skills />
-                    <hr class="hr"></hr>
+
+                    <h5>I have experience using:</h5>
+                    <Xp />
+                    <hr className="hr"></hr>
                 </section>
                 <div id="contact" className="container">
                     <div id="contact-me" className="row">
@@ -25,7 +26,7 @@ function App() {
                     </div>
                 </div>
             </div>
-        </body>
+        </>
     );
 }
 

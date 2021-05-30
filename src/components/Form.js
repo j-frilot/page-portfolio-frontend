@@ -2,10 +2,10 @@ import React from "react";
 
 const Form = () => {
     return (
-        <div class="col s12 l8">
-            <div class="card-panel">
+        <div className="col s12 l8">
+            <div className="card-panel">
                 <form
-                    class="form center-align"
+                    className="form center-align"
                     action="https://formspree.io/f/mwkwkobn"
                     name="contact-form"
                     data-netlify="true"
@@ -13,8 +13,8 @@ const Form = () => {
                 >
                     <h4>Send Me Feedback</h4>
 
-                    <div class="form-group">
-                        <label for="first-name">
+                    <div className="form-group">
+                        <label htmlFor="first-name">
                             <input
                                 type="text"
                                 name="firstName"
@@ -26,8 +26,8 @@ const Form = () => {
                         <br />
                     </div>
 
-                    <div class="form-group">
-                        <label for="last-name">
+                    <div className="form-group">
+                        <label htmlFor="last-name">
                             <input
                                 type="text"
                                 name="lastName"
@@ -38,8 +38,8 @@ const Form = () => {
                         <br />
                     </div>
 
-                    <div class="form-group">
-                        <label for="email">
+                    <div className="form-group">
+                        <label htmlFor="email">
                             <input
                                 type="email"
                                 name="_replyto"
@@ -51,8 +51,8 @@ const Form = () => {
                         <br />
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">
+                    <div className="form-group">
+                        <label htmlFor="message">
                             <textarea
                                 type="text"
                                 id="message"
@@ -63,7 +63,7 @@ const Form = () => {
                         </label>
                     </div>
 
-                    <button type="submit" value="Send" class="submit-btn">
+                    <button type="submit" value="Send" className="submit-btn">
                         Send
                     </button>
                 </form>
