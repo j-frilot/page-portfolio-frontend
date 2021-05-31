@@ -13,7 +13,7 @@ const Xp = () => {
 
     return (
         <div className="row">
-            {technology.map((xp) => (
+            {technology.slice(4, 10).map((xp) => (
                 <div key={xp.id} className="col s6 m4 l2">
                     <img
                         src={xp.icon}

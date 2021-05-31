@@ -1,27 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Skills = () => {
+    const [technology, setTechnology] = useState([]);
+    useEffect(() => {
+        fetch("https://joshuafrilot.com/api/experience")
+            .then((res) => res.json())
+            .then((res) => {
+                setTechnology(res);
+            });
+    }, []);
     return (
         <div id="my skills" className="row">
-            <div className="col s6 m3 skill">
-                <h4>Responsive</h4>
-                <i className="material-icons">app_settings_alt</i>
-            </div>
-
-            <div className="col s6 m3 skill">
-                <h4>Efficiency</h4>
-                <i className="material-icons">update</i>
-            </div>
-
-            <div className="col s6 m3 skill">
-                <h4>Adaptive</h4>
-                <i className="material-icons skill">add_task</i>
-            </div>
-
-            <div className="col s6 m3">
-                <h4>Innovative</h4>
-                <i className="material-icons">lightbulb_outline</i>
-            </div>
+            {technology.slice(0, 4).map((xp) => (
+                <div key={xp.id} className="col s6 m3 skill">
+                    <h4>{xp.label}</h4>
+                    <i className="material-icons">{xp.icon}</i>
+                </div>
+            ))}
         </div>
     );
 };
